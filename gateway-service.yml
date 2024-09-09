@@ -24,7 +24,11 @@ spring:
         - id: inventario-service
           uri: lb://inventario-service
           predicates:
-            - Path=/apicapacidad/**
+            - Path=/apiinventario/**
+        - id: seguridad-service
+          uri: lb://seguridad-service
+          predicates:
+            - Path=/auth/**
        
               
        
