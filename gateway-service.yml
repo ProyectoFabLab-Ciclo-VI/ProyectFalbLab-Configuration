@@ -25,6 +25,8 @@ spring:
           uri: lb://inventario-service
           predicates:
             - Path=/apiinventario/**
+          filters:
+            - AuthenticationFilter
         - id: seguridad-service
           uri: lb://seguridad-service
           predicates:
