@@ -24,7 +24,7 @@ spring:
         - id: inventario-service
           uri: lb://inventario-service
           predicates:
-            - Path=/apiusuario/**
+            - Path=/api(inventario|usuario)/**
            
             
           
