@@ -21,14 +21,18 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: inventario-service-apiinventario
-          uri: lb://inventario-service
-          predicates:
-            - Path=/apiinventario/**
-        - id: inventario-service-apiusuario
-          uri: lb://inventario-service
+        - id: usuario-service-apiusuario
+          uri: lb://usuario-service
           predicates:
             - Path=/apiusuario/**
+        - id: usuario-service-apipersona
+          uri: lb://usuario-service
+          predicates:
+            - Path=/apipersona/**
+        - id: usuario-service-apicargo
+          uri: lb://usuario-service
+          predicates:
+            - Path=/apicargo/**
            
             
           
