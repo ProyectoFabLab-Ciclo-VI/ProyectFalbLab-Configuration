@@ -33,6 +33,10 @@ spring:
           uri: lb://usuario-service
           predicates:
             - Path=/apicargo/**
+        - id: inventario-service
+          uri: lb://inventario-service
+          predicates:
+            - Path=/apiinventario/**
            
             
           
