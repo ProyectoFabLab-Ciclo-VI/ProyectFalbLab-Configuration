@@ -15,7 +15,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: fablabproyecto@gmail.com
-    password: laboratoriofablab
+    password: bvgo wzga uify zlgg
     properties:
       mail:
         smtp:
