@@ -1,0 +1,32 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 12345678
+    url: jdbc:mysql://localhost:3306/proyectofablab?serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQLDialect
+  application:
+    name: pedidos-service  # Añadir nombre de la aplicación para el registro en Eureka
+  cloud:
+    config:
+      uri: http://localhost:8850
+
+file:
+  upload-dir: src/main/resources/fileImagine
+
+message: Configuracion de inventario en el servidor levantado!
