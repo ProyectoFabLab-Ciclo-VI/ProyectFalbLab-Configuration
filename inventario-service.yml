@@ -26,7 +26,5 @@ spring:
     config:
       uri: http://localhost:8850
 
-file:
-  upload-dir: src/main/resources/templates
 
 message: Configuracion de inventario en el servidor levantado!
