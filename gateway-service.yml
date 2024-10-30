@@ -41,6 +41,10 @@ spring:
           uri: lb://pedidos-service
           predicates:
             - Path=/apipedidos/**
+        - id: prestamo-service
+          uri: lb://prestamo-service
+          predicates:
+            - Path=/apiprestamo/**
            
             
           
