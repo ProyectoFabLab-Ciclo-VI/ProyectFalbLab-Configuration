@@ -29,5 +29,6 @@ spring:
 file:
   upload-dir: src/main/resources/fileImagine
   voucher-upload-dir: src/main/resources/Filevoucher
+  pedido-upload-dir: src/main/resources/Filepedido
 
 message: Configuracion de inventario en el servidor levantado!
