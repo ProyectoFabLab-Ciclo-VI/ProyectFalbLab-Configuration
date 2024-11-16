@@ -25,6 +25,10 @@ spring:
   cloud:
     config:
       uri: http://localhost:8850
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB  # Esto incluye el tamaño combinado de los archivos en una solicitud
 
 file:
   upload-dir: src/main/resources/fileImagine
